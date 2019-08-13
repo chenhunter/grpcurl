@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/kazegusuri/grpcurl.svg?style=svg)](https://circleci.com/gh/kazegusuri/grpcurl)
 
 Forked from kazegusuri/grpcurl
+Added functionality to include user-agent in the request
 
 # Installation
 
