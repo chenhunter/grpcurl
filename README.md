@@ -2,12 +2,12 @@
 
 [![CircleCI](https://circleci.com/gh/kazegusuri/grpcurl.svg?style=svg)](https://circleci.com/gh/kazegusuri/grpcurl)
 
-super experimental
+Forked from kazegusuri/grpcurl
 
 # Installation
 
 ```
-go get -u github.com/kazegusuri/grpcurl
+go get -u github.com/chenhunter/grpcurl
 ```
 
 # Usage
