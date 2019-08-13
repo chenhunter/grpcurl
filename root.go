@@ -7,10 +7,11 @@ import (
 )
 
 type GlobalOptions struct {
-	Verbose  bool
-	Insecure bool
-	Input    io.Reader
-	Output   io.Writer
+	Verbose 	bool
+	Insecure	bool
+	userAgent	string
+	Input		io.Reader
+	Output		io.Writer
 }
 
 type RootCommand struct {
@@ -33,6 +34,7 @@ func NewRootCommand(r io.Reader, w io.Writer) *RootCommand {
 		},
 	}
 	c.cmd.PersistentFlags().BoolVarP(&c.opts.Verbose, "verbose", "v", false, "verbose output")
+	c.cmd.PersistentFlags().StringVarP(&c.opts.userAgent, "user-agent", "u", "", "with user-agent")
 	c.cmd.PersistentFlags().BoolVarP(&c.opts.Insecure, "insecure", "k", false, "with insecure")
 	c.cmd.AddCommand(NewListServicesCommand(c.opts).Command())
 	c.cmd.AddCommand(NewCallCommand(c.opts).Command())

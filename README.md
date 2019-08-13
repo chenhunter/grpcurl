@@ -26,9 +26,10 @@ Available Commands:
   list_services List services and methods provided by gRPC server
 
 Flags:
-  -h, --help       help for grpcurl
-  -k, --insecure   with insecure
-  -v, --verbose    verbose output
+  -h, --help         help for grpcurl
+  -k, --insecure     with insecure
+  -u, --user-agent   with user-agent
+  -v, --verbose      verbose output
 
 Use "grpcurl [command] --help" for more information about a command.
 ```
