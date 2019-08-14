@@ -50,7 +50,7 @@ func (c *ListServicesCommand) Run(cmd *cobra.Command, args []string) error {
 	ctx := context.Background()
 
 	c.addr = args[0]
-	conn, err := NewGRPCConnection(ctx, c.addr, c.opts.Insecure)
+	conn, err := NewGRPCConnection(ctx, c.addr, c.opts.userAgent, c.opts.Insecure)
 	if err != nil {
 		return err
 	}
